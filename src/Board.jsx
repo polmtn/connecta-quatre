@@ -18,7 +18,7 @@ function Cell({ number, color, active, onCellClick }) {
 
 export default function Board() {
   const [cells, setCells] = useState(Array(100).fill(CellColor.BLANK))
-  const [activeCell, setActiveCell] = useState(0)
+  const [activeCell, setActiveCell] = useState(99)
 
   function setCellColor(color) {
     const nextCells = cells.slice()
