@@ -123,17 +123,3 @@
 .boardbuttons button.cellcolor-player2 {
   background: #FF3EA5;
 }
-
-.player-count {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 7px 0;
-}
-
-.player-count.player1{
-  color: #4CCD99;
-}
-
-.player-count.player2{
-  color: #FF3EA5;
-}

@@ -61,11 +61,9 @@ export default function Board() {
       </div>
 
       <div className="boardbuttons">
-        <div className="player-count player1">{cells.filter(c => c == CellColor.PLAYER1).length}</div>
         <button className="cellcolor-player1" onClick={() => setCellColor(CellColor.PLAYER1)}></button>
         <button className="cellcolor-blank" onClick={() => setCellColor(CellColor.BLANK)}>X</button>
         <button className="cellcolor-player2" onClick={() => setCellColor(CellColor.PLAYER2)}></button>
-        <div className="player-count player2">{cells.filter(c => c == CellColor.PLAYER2).length}</div>
       </div>
     </div>
   )
