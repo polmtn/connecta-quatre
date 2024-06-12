@@ -49,14 +49,24 @@ export default function Board() {
   }
 
   return (
-    <>
-      {boardRows}
+    <div className='board'>
+      <div className="board-title">
+        <input className="board-title-name player1" type="text" maxLength={15} defaultValue="Jugador 1"/>
+        <span>⚔️</span>
+        <input className="board-title-name player2" type="text" maxLength={15} defaultValue="Jugador 2"/>
+      </div>
+
+      <div className="board-rows">
+        {boardRows}
+      </div>
 
       <div className="boardbuttons">
-        <button className="cellcolor-blank" onClick={() => setCellColor(CellColor.BLANK)}>X</button>
+        <div className="player-count player1">{cells.filter(c => c == CellColor.PLAYER1).length}</div>
         <button className="cellcolor-player1" onClick={() => setCellColor(CellColor.PLAYER1)}></button>
+        <button className="cellcolor-blank" onClick={() => setCellColor(CellColor.BLANK)}>X</button>
         <button className="cellcolor-player2" onClick={() => setCellColor(CellColor.PLAYER2)}></button>
+        <div className="player-count player2">{cells.filter(c => c == CellColor.PLAYER2).length}</div>
       </div>
-    </>
+    </div>
   )
 }

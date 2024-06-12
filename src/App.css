@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -26,6 +25,42 @@
   color: #888;
 }
 
+.app-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 18px 0;
+}
+
+.board {
+  margin: 0px 45px;
+}
+
+.board-title {
+  display: flex;
+}
+
+.board-title span {
+  font-size: 1.8em;
+}
+
+.board-title-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 50%;
+  border: none;
+  text-align: center;
+  background: none;
+}
+
+.board-title-name.player1 {
+  color: #4CCD99;
+}
+
+.board-title-name.player2 {
+  color: #FF3EA5;
+}
+
 .board-row {
   display: flex;
   justify-content: center;
@@ -34,13 +69,13 @@
 .cell {
   box-sizing: border-box;
   border: 1px solid #BBB;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 36px;
-  height: 36px;
+  line-height: 40px;
+  height: 40px;
   margin-right: -1px;
   margin-top: -1px;
-  width: 36px;
+  width: 40px;
   cursor: pointer;
   user-select: none;
 }
@@ -87,4 +122,18 @@
 
 .boardbuttons button.cellcolor-player2 {
   background: #FF3EA5;
+}
+
+.player-count {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 7px 0;
+}
+
+.player-count.player1{
+  color: #4CCD99;
+}
+
+.player-count.player2{
+  color: #FF3EA5;
 }

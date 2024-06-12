@@ -8,9 +8,17 @@ function App() {
 
   return (
     <>
-      <h1>Connecta 4 Matemàtic</h1>
+      <div className='app-row'>
+        <Board />
+        <Board />
+        <Board />
+      </div>
 
-      <Board />
+      <div className='app-row'>
+        <Board />
+        <Board />
+        <Board />
+      </div>
     </>
   )
 }
